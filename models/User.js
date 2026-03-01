@@ -1,6 +1,8 @@
 const config = require('../config');
 const mongoose = require('mongoose');
 
+//add newUserSchema section
+
 const UserSchema = new mongoose.Schema({
   name: {
     type: String,
