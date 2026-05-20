@@ -21,12 +21,12 @@ const startServer = () => {
   server = app
     .listen(port, () => {
       console.log(
-        `Server running in ${config.NODE_ENV} mode on port ${port}`
+        // `Server running in ${config.NODE_ENV} mode on port ${port}`
       );
 
       // Socket.io
-      const io = socketio(server);
-      io.on("connect", (socket) => gameSocket.init(socket, io));
+      // const io = socketio(server);
+      // io.on("connect", (socket) => gameSocket.init(socket, io));
 
     })
     .on("error", (err) => {
